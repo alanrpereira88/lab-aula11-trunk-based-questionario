@@ -1,7 +1,7 @@
 # Questionário — Estratégias de Branching
 
-**Nome:** _seu nome completo_
-**Data:** _data_
+**Nome:** Rafae de Miranda Florindo
+**Data:** 29/05/2026
 **Turma:** DevOps I — 2025
 
 > Responda com suas próprias palavras, em frases completas. Mínimo de 3 frases por questão.
@@ -17,9 +17,10 @@
 
 No Git Flow, existe uma branch chamada `develop`, separada da `main`. Qual é o propósito dela? Por que o Git Flow não faz merge de features direto na `main`?
 
+
 **Resposta:**
 
-_Escreva aqui._
+A branch develop serve como uma área de integração onde as features vão sendo juntadas e testadas antes de chegar na main. A ideia é que a main fique sempre com código estável e pronto pra produção, sem versões incompletas. Por isso o Git Flow não faz merge de feature direto na main: tudo passa primeiro pela develop, e só quando está fechado e testado é que vira uma release pra main.
 
 ---
 
@@ -29,7 +30,7 @@ No GitHub Flow, nenhuma mudança chega à `main` sem passar por um Pull Request.
 
 **Resposta:**
 
-_Escreva aqui._
+O Pull Request permite que outras pessoas revisem o código, deixem comentários e que os testes automáticos rodem antes de qualquer coisa entrar na main. Num merge direto isso tudo seria pulado, e código com erro poderia ir parar na main sem ninguém perceber. O GitHub Flow adota essa regra justamente pra manter a main sempre confiável e pronta pra deploy.
 
 ---
 
@@ -39,7 +40,7 @@ No Trunk-Based Development, os desenvolvedores criam branches que duram poucas h
 
 **Resposta:**
 
-_Escreva aqui._
+Integrar várias vezes ao dia seria perigoso sem suporte porque cada merge poderia quebrar a main e ninguém ia perceber na hora. Pra isso funcionar com segurança, o projeto precisa ter testes automatizados rodando a cada commit (CI) e um pipeline rápido que dê retorno logo. Também ajuda muito ter feature flags, pra conseguir mandar código incompleto sem ele entrar em funcionamento.
 
 ---
 
@@ -49,7 +50,7 @@ Leia o arquivo [`docs/feature-flags.md`](../docs/feature-flags.md) neste reposit
 
 **Resposta:**
 
-_Escreva aqui._
+Feature flags são como interruptores que ligam ou desligam uma funcionalidade sem precisar mudar o código ou fazer um novo deploy. Elas resolvem o problema de mandar código ainda não terminado pra main, porque a parte incompleta fica escondida atrás da flag desligada. Sem elas seria difícil commitar código incompleto, já que ele estaria ativo e poderia quebrar ou confundir o que está em produção.
 
 ---
 
