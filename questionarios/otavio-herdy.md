@@ -83,7 +83,7 @@ Uma equipe de 4 pessoas desenvolve um app mobile com lançamentos a cada 3 meses
 
 **Resposta:**
 
-_Escreva aqui._
+_Git Flow. Lançamentos a cada 3 meses com ciclos longos de testes exigem um ambiente isolado para o controle de qualidade (QA), necessidade que é atendida pelas branches de release. Dessa forma, a equipe consegue testar a versão candidata sem bloquear o desenvolvimento das novas funcionalidades do próximo trimestre na branch develop._
 
 ---
 
@@ -93,4 +93,4 @@ Dentre os três workflows que você praticou na aula 11.1, qual foi o mais desaf
 
 **Resposta:**
 
-_Escreva aqui._
+_Trunk Based. Acredito que a maior dificuldade é sair da logica de commits diarios, pra implementar a parte de flags, por questão de costume é mais facil usar as outras._
