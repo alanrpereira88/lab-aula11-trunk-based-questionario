@@ -39,7 +39,7 @@ No Trunk-Based Development, os desenvolvedores criam branches que duram poucas h
 
 **Resposta:**
 
-_Escreva aqui._
+_Caso a equipe não tenha um suporte técnico, qualquer problema no codigo poderia quebrar o sistema para todos os usuários, atrapalhando toda equipe. Um backup de versões anteriores,  e um pipeline de CI rodando testes automatizados._
 
 ---
 
@@ -49,7 +49,7 @@ Leia o arquivo [`docs/feature-flags.md`](../docs/feature-flags.md) neste reposit
 
 **Resposta:**
 
-_Escreva aqui._
+_As feature flags são técnicas que utilizam variáveis de configuração para ativar ou desativar funcionalidades em produção. Pois a equipe seria forçada a manter branches separadas por dias ou semanas para evitar que interfaces quebradas fossem acidentalmente parar em produção._
 
 ---
 
