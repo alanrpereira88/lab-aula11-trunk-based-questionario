@@ -63,7 +63,7 @@ Você acabou de usar `--no-ff` no Round 1. O que ele garantiu no histórico? Por
 
 **Resposta:**
 
-_Escreva aqui._
+_Ele é bom pois obriga o git a criar um commit mergeando o código, mesmo com ele podendo não fazer e fica o histórico do conjunto de commits dela. Pois é melhor pra rastrear, visto que se der problema ele consegue saber de qual feature veio. Com o --no-ff aparece a bifurcação se unindo, melhor pra visualizar._
 
 ---
 
@@ -73,7 +73,7 @@ Descreva em 2 a 3 frases a principal diferença entre Git Flow e GitHub Flow no 
 
 **Resposta:**
 
-_Escreva aqui._
+_O git flow é mais denso, com o dev trabalhando numa só feature mas tendo que passar por várias branchs. O hub flow é branch curta, merge e produção, sendo muito menos cerimonialista e mais rápido._
 
 ---
 
@@ -83,7 +83,7 @@ Uma equipe de 4 pessoas desenvolve um app mobile com lançamentos a cada 3 meses
 
 **Resposta:**
 
-_Escreva aqui._
+_O git flow, pois é preparado pra algo mais planejado, já que requer inúmeras etapas de branch, com um tempo preparado, creio que o controle dele seja melhor. Caso fosse algo com testes mais ágeis, as inúmeras etapas dele não serviriam._
 
 ---
 
@@ -93,4 +93,4 @@ Dentre os três workflows que você praticou na aula 11.1, qual foi o mais desaf
 
 **Resposta:**
 
-_Escreva aqui._
+_O que mais me complicou foi entender isso de apagar branch toda hora, não sou acostumado com isso e geralmente subo inúmeras branchs pra cada feature, ficando alterando entre elas. Mas, sempre branchs longas que duram longos períodos durante o desenvolvimento sem serem apagadas._
