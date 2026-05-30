@@ -63,7 +63,7 @@ Você acabou de usar `--no-ff` no Round 1. O que ele garantiu no histórico? Por
 
 **Resposta:**
 
-_Escreva aqui._
+_O --no-ff serve para deixar um "rastro" no histórico do Git. Em vez de o Git fingir que você fez tudo em uma linha reta só, ele força a criação de um nó de ligação que prova que aquela tarefa veio de uma branch separada._
 
 ---
 
@@ -73,7 +73,7 @@ Descreva em 2 a 3 frases a principal diferença entre Git Flow e GitHub Flow no 
 
 **Resposta:**
 
-_Escreva aqui._
+_O Cherry-pick é como "escolher a dedo". Ele serve para você copiar um commit específico de uma branch e colá-lo em outra, sem precisar trazer todo o resto do trabalho que foi feito naquela branch._
 
 ---
 
@@ -83,7 +83,7 @@ Uma equipe de 4 pessoas desenvolve um app mobile com lançamentos a cada 3 meses
 
 **Resposta:**
 
-_Escreva aqui._
+_Para a questão 6, a diferença é que o Git Flow foca em lançamentos grandes e planejados com várias etapas de organização, enquanto o GitHub Flow foca em entregas rápidas e constantes direto para o usuário. Já para a questão 7, o Git Flow é a melhor escolha porque sua estrutura lida bem com ciclos longos de testes e lançamentos a cada 3 meses, garantindo a estabilidade necessária para um app mobile antes de cada atualização oficial._
 
 ---
 
@@ -93,4 +93,4 @@ Dentre os três workflows que você praticou na aula 11.1, qual foi o mais desaf
 
 **Resposta:**
 
-_Escreva aqui._
+_O Trunk-Based Development foi o mais difícil devido à pressão de integrar o código diretamente na main várias vezes ao dia. O maior desafio foi a mudança de mentalidade: sem uma branch de segurança para testes longos, você é obrigado a garantir que cada pequeno commit esteja perfeito para não quebrar o projeto dos colegas, o que exige um domínio muito maior de automação e rapidez._

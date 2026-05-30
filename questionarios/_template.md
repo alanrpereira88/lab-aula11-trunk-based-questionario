@@ -1,8 +1,8 @@
 # Questionário — Estratégias de Branching
 
-**Nome:** _lucas henrique conde rodrigues_
-**Data:** _29/05/2026_
-**Turma:** DevOps I — 2026
+**Nome:** _seu nome completo_
+**Data:** _data_
+**Turma:** DevOps I — 2025
 
 > Responda com suas próprias palavras, em frases completas. Mínimo de 3 frases por questão.
 > Respostas vagas ou idênticas às de colegas não serão aceitas.
@@ -19,7 +19,7 @@ No Git Flow, existe uma branch chamada `develop`, separada da `main`. Qual é o 
 
 **Resposta:**
 
-_develop é usada para testes e a main é o produto principal_
+_Escreva aqui._
 
 ---
 
@@ -29,7 +29,7 @@ No GitHub Flow, nenhuma mudança chega à `main` sem passar por um Pull Request.
 
 **Resposta:**
 
-_O Pull Request funciona como uma trava de segurança e qualidade: ele obriga que o código seja revisado por outros desenvolvedores e validado por testes automáticos antes de entrar na main. Esse modelo é adotado para evitar que erros humanos quebrem o produto final e para garantir que a equipe esteja sempre alinhada sobre o que está sendo alterado._
+_Escreva aqui._
 
 ---
 
