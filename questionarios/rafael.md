@@ -84,7 +84,7 @@ Uma equipe de 4 pessoas desenvolve um app mobile com lançamentos a cada 3 meses
 
 **Resposta:**
 
-_Escreva aqui._
+Pra esse time eu escolheria o Git Flow. Como os lançamentos acontecem só a cada 3 meses e ainda tem um ciclo longo de testes, faz sentido ter as branches develop e release pra estabilizar tudo antes de soltar a versão. Com um time pequeno de 4 pessoas e ritmo de entrega mais espaçado, essa estrutura mais organizada compensa, mesmo sendo mais "burocrática".
 
 ---
 
@@ -94,4 +94,4 @@ Dentre os três workflows que você praticou na aula 11.1, qual foi o mais desaf
 
 **Resposta:**
 
-_Escreva aqui._
+Pra mim o mais desafiador foi o Git Flow, por causa da quantidade de branches e regras pra lembrar. Ficar controlando quando usar develop, release e quando o merge vai pra main me confundiu mais do que os outros dois. O Trunk-Based pareceu mais simples no comando, mas a lógica de confiar tanto em automação e feature flags também deu o que pensar.
