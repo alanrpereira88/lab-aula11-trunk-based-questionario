@@ -63,17 +63,17 @@ Você acabou de usar `--no-ff` no Round 1. O que ele garantiu no histórico? Por
 
 **Resposta:**
 
-_Escreva aqui._
+_O --no--ff preserva a rastreabilidade ecata de quando a funcionalidade entrou no projeto. O Git Flow adota para que não se misture em uma linha reta de historico. No git log --graph, essa diferença aparece visualmente como uma ramificação lateral._
 
 ---
 
 ### Q6 — Comparativo: Git Flow vs GitHub Flow
 
-Descreva em 2 a 3 frases a principal diferença entre Git Flow e GitHub Flow no dia a dia do desenvolvedor. Foque no que muda na prática, não só na quantidade de branches.
+Descreva em 2 a 3 frases a principal diferença entre Git Flow e GitHub Flow no dia a dia do desenvolvedor. Foque no que muda na prática, não só na quantidade de branches. 
 
 **Resposta:**
 
-_Escreva aqui._
+_A principal diferença prática é o destino do seu código e a velocidade em que ele chega aos usuários finais. No Git Flow, o desenvolvedor integra seu trabalho na branch develop para compor pacotes de um lançamento futuro. Já no GitHub Flow, a mudança aprovada vai direto para a main via Pull Request e entra imediatamente em produção_
 
 ---
 
@@ -83,7 +83,7 @@ Uma equipe de 4 pessoas desenvolve um app mobile com lançamentos a cada 3 meses
 
 **Resposta:**
 
-_Escreva aqui._
+_Git Flow. Lançamentos a cada 3 meses com ciclos longos de testes exigem um ambiente isolado para o controle de qualidade (QA), necessidade que é atendida pelas branches de release. Dessa forma, a equipe consegue testar a versão candidata sem bloquear o desenvolvimento das novas funcionalidades do próximo trimestre na branch develop._
 
 ---
 
@@ -93,4 +93,4 @@ Dentre os três workflows que você praticou na aula 11.1, qual foi o mais desaf
 
 **Resposta:**
 
-_Escreva aqui._
+_Trunk Based. Acredito que a maior dificuldade é sair da logica de commits diarios, pra implementar a parte de flags, por questão de costume é mais facil usar as outras._
