@@ -63,7 +63,7 @@ Você acabou de usar `--no-ff` no Round 1. O que ele garantiu no histórico? Por
 
 **Resposta:**
 
-_Escreva aqui._
+_O --no--ff preserva a rastreabilidade ecata de quando a funcionalidade entrou no projeto. O Git Flow adota para que não se misture em uma linha reta de historico. No git log --graph, essa diferença aparece visualmente como uma ramificação lateral._
 
 ---
 
@@ -73,7 +73,7 @@ Descreva em 2 a 3 frases a principal diferença entre Git Flow e GitHub Flow no 
 
 **Resposta:**
 
-_Escreva aqui._
+_É o destino do seu código e a velocidade em que ele chega aos usuários finais. No Git Flow, o desenvolvedor integra seu trabalho na branch develop para compor pacotes de um lançamento futuro. Já no GitHub Flow, a mudança aprovada vai direto para a main via Pull Request e entra imediatamente em produção._
 
 ---
 
