@@ -84,7 +84,7 @@ Uma equipe de 4 pessoas desenvolve um app mobile com lançamentos a cada 3 meses
 
 **Resposta:**
 
-_Escreva aqui._
+_Git Flow. Com lançamentos a cada 3 meses e testes longos, é preciso separar o código em desenvolvimento "develop" do que está em produção "main", além de usar release branches para estabilizar a versão sem bloquear novas features — algo que o GitHub Flow não suporta bem._
 
 ---
 
@@ -94,4 +94,4 @@ Dentre os três workflows que você praticou na aula 11.1, qual foi o mais desaf
 
 **Resposta:**
 
-_Escreva aqui._
+_O Git Flow. A principal dificuldade foi lembrar para onde mergear cada tipo de branch e sempre usar --no-ff para preservar o histórico — diferente do GitHub Flow e TBD, que têm fluxos mais lineares e simples._
