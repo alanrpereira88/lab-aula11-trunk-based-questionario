@@ -64,7 +64,7 @@ Você acabou de usar `--no-ff` no Round 1. O que ele garantiu no histórico? Por
 
 **Resposta:**
 
-_Escreva aqui._
+_Forçou a criação de um commit de merge mesmo fast-foward seria possivel. Ele preserva o contexto histórico da Brach. No gráfico mosttra o commit de merge, a ramificação e todos os commits são agrupados visualmente_
 
 ---
 
@@ -74,7 +74,7 @@ Descreva em 2 a 3 frases a principal diferença entre Git Flow e GitHub Flow no 
 
 **Resposta:**
 
-_Escreva aqui._
+_No Git flow o Dev trabalha contra uma branch develop separada,criando branches a partir dela e integrando primeiramente, do merge para até a main. No Github Flow, o dev cria branches curtas diretamente a partir da main e, após um Pull Request com revisão e testes automatizados, faz merge na própria main e pode fazer deploy imediatamente, ou seja, não existe uma develop separada_
 
 ---
 
@@ -84,7 +84,7 @@ Uma equipe de 4 pessoas desenvolve um app mobile com lançamentos a cada 3 meses
 
 **Resposta:**
 
-_Escreva aqui._
+_Git Flow. Com lançamentos a cada 3 meses e testes longos, é preciso separar o código em desenvolvimento "develop" do que está em produção "main", além de usar release branches para estabilizar a versão sem bloquear novas features — algo que o GitHub Flow não suporta bem._
 
 ---
 
@@ -94,4 +94,4 @@ Dentre os três workflows que você praticou na aula 11.1, qual foi o mais desaf
 
 **Resposta:**
 
-_Escreva aqui._
+_O Git Flow. A principal dificuldade foi lembrar para onde mergear cada tipo de branch e sempre usar --no-ff para preservar o histórico — diferente do GitHub Flow e TBD, que têm fluxos mais lineares e simples._

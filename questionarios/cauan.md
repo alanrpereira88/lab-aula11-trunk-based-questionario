@@ -39,7 +39,7 @@ No Trunk-Based Development, os desenvolvedores criam branches que duram poucas h
 
 **Resposta:**
 
-_Escreva aqui._
+_Sem suporte técnico adequado, integrar rápido seria perigoso porque código incompleto ou com bugs chegaria à `main` constantemente, quebrando o trabalho de outros. Para ser seguro, o projeto precisa de: suite de testes automatizados robusta (CI), pipeline de integração contínua que rode a cada push, e cultura de feature flags para esconder funcionalidades incompletas do usuário final._
 
 ---
 
@@ -49,7 +49,7 @@ Leia o arquivo [`docs/feature-flags.md`](../docs/feature-flags.md) neste reposit
 
 **Resposta:**
 
-_Escreva aqui._
+_Feature flags são condicionais no código que permitem ativar ou desativar uma funcionalidade sem fazer deploy de novo — geralmente controladas por configuração ou painel. No Trunk-Based, elas resolvem o problema de commitar código incompleto em `main`: o código vai para produção, mas a feature fica "apagada" até estar pronta. Sem flags, qualquer código incompleto commitado na `main` ficaria exposto aos usuários imediatamente, o que forçaria as pessoas a segurar commits em branches longas,contradizendo o próprio modelo._
 
 ---
 
