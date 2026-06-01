@@ -39,7 +39,7 @@ No Trunk-Based Development, os desenvolvedores criam branches que duram poucas h
 
 **Resposta:**
 
-_Escreva aqui._
+_Integrar direto na main sem suporte é arriscado porque qualquer erro quebra o sistema todo na hora. Para ser seguro, é essencial ter testes automáticos e um pipeline de CI/CD, que conferem e barram erros antes que eles cheguem ao produto final._
 
 ---
 
@@ -49,7 +49,7 @@ Leia o arquivo [`docs/feature-flags.md`](../docs/feature-flags.md) neste reposit
 
 **Resposta:**
 
-_Escreva aqui._
+_Feature Flags são "interruptores" que permitem ligar ou desligar funções no código sem novo deploy. Elas resolvem o risco de quebrar o sistema ao integrar funcionalidades inacabadas na main. Sem elas, commitar código incompleto seria impossível, pois ele ficaria exposto ao usuário final, causando erros ou exibindo recursos que ainda não funcionam._
 
 ---
 
