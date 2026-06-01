@@ -1,0 +1,97 @@
+# Questionário — Estratégias de Branching
+
+**Nome:** _Marco Túlio Gomes Ferreira_
+**Data:** _01/06/2026_
+**Turma:** DevOps I — 2026
+
+> Responda com suas próprias palavras, em frases completas. Mínimo de 3 frases por questão.
+> Respostas vagas ou idênticas às de colegas não serão aceitas.
+
+---
+
+## ROUND 1 — entregar via `short/q1q4-[nome]` com `--no-ff`
+
+---
+
+### Q1 — Git Flow: o papel da branch `develop`
+
+No Git Flow, existe uma branch chamada `develop`, separada da `main`. Qual é o propósito dela? Por que o Git Flow não faz merge de features direto na `main`?
+
+**Resposta:**
+
+_Serve como um ambinte de teste. o develop diferente da main, serve como uma versão "beta" de um código, já que a main seria um
+"release" do código_
+
+---
+
+### Q2 — GitHub Flow: por que o Pull Request é obrigatório
+
+No GitHub Flow, nenhuma mudança chega à `main` sem passar por um Pull Request. O que um PR permite que um merge direto não permitiria? Por que esse modelo adota essa regra?
+
+**Resposta:**
+
+_o Pull request vai rodar testes, analistas, builds, etc; antes de permitir o merge, o que torna elá muito mais segura ao invez de dar um merge direto. Rdeuz chance de erro humano já que o main é o "release", o mesmo é esperado não ter bugs críticos_
+
+---
+
+### Q3 — Trunk-Based: branches curtas e automação
+
+No Trunk-Based Development, os desenvolvedores criam branches que duram poucas horas. O que tornaria isso perigoso sem um bom suporte técnico? O que precisa existir no projeto para que integrar rápido em `main` seja seguro?
+
+**Resposta:**
+
+_Nesse cenário, existe achance de um código quebrado paralisar o time no meio do desenvolvimento, isso sem contar a inevitabilidade dos testes manuais.Tem que ter tester unitários mas automatizados para ter eficência, testes de integração que não dure muito tempo. juntando essas soluções e outras faz com que merges acontecerem se todos os testes passarem, garantindo a qualidade_
+
+---
+
+### Q4 — Feature Flags
+
+Leia o arquivo [`docs/feature-flags.md`](../docs/feature-flags.md) neste repositório antes de responder. O que são feature flags e qual problema elas resolvem no Trunk-Based Development? Por que sem feature flags seria mais difícil commitar código incompleto em `main`?
+
+**Resposta:**
+
+_É uma tecnica que faz com que caso queira manter um recurso incompleto do código, aplicar o valor dela como "false" por exemplo que faz o código ignorar o recurso sem fazer o delpoy. Sem eles, exigiria muito do programador mascarar o recurso incompleto com branches longas_
+
+---
+
+## ROUND 2 — entregar via `short/q5q8-[nome]` sem `--no-ff`
+
+---
+
+### Q5 — O que o `--no-ff` garante no histórico
+
+Você acabou de usar `--no-ff` no Round 1. O que ele garantiu no histórico? Por que o Git Flow adota essa convenção em vez do merge padrão? Qual a diferença visual no `git log --graph`?
+
+**Resposta:**
+
+_Forçou a criação de um commit de merge mesmo fast-foward seria possivel. Ele preserva o contexto histórico da Brach. No gráfico mosttra o commit de merge, a ramificação e todos os commits são agrupados visualmente_
+
+---
+
+### Q6 — Comparativo: Git Flow vs GitHub Flow
+
+Descreva em 2 a 3 frases a principal diferença entre Git Flow e GitHub Flow no dia a dia do desenvolvedor. Foque no que muda na prática, não só na quantidade de branches.
+
+**Resposta:**
+
+_No Git flow o Dev trabalha contra uma branch develop separada,criando branches a partir dela e integrando primeiramente, do merge para até a main. No Github Flow, o dev cria branches curtas diretamente a partir da main e, após um Pull Request com revisão e testes automatizados, faz merge na própria main e pode fazer deploy imediatamente, ou seja, não existe uma develop separada_
+
+---
+
+### Q7 — Escolha justificada
+
+Uma equipe de 4 pessoas desenvolve um app mobile com lançamentos a cada 3 meses e ciclo longo de testes. Qual dos três workflows você escolheria? Justifique considerando o ritmo de lançamentos e o tamanho do time.
+
+**Resposta:**
+
+_Git Flow. Com lançamentos a cada 3 meses e testes longos, é preciso separar o código em desenvolvimento "develop" do que está em produção "main", além de usar release branches para estabilizar a versão sem bloquear novas features — algo que o GitHub Flow não suporta bem._
+
+---
+
+### Q8 — Reflexão sobre a prática
+
+Dentre os três workflows que você praticou na aula 11.1, qual foi o mais desafiador? Descreva o que tornou ele mais difícil — pode ser um comando, uma regra do workflow, ou a lógica por trás de uma etapa.
+
+**Resposta:**
+
+_O Git Flow. A principal dificuldade foi lembrar para onde mergear cada tipo de branch e sempre usar --no-ff para preservar o histórico — diferente do GitHub Flow e TBD, que têm fluxos mais lineares e simples._
