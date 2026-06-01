@@ -83,7 +83,7 @@ Uma equipe de 4 pessoas desenvolve um app mobile com lançamentos a cada 3 meses
 
 **Resposta:**
 
-_Escreva aqui._
+_Git Flow. Como os lançamentos acontecem só a cada 3 meses e ainda tem um ciclo longo de testes, faz sentido ter as branches develop e release pra estabilizar tudo antes de soltar a versão. Um time pequeno de 4 pessoas e ritmo de entrega mais espaçado, essa estrutura compensa, mesmo sendo mais "burocrática"._
 
 ---
 
@@ -93,4 +93,4 @@ Dentre os três workflows que você praticou na aula 11.1, qual foi o mais desaf
 
 **Resposta:**
 
-_Escreva aqui._
+_Trunk based. Se tornou difícil por causa de um erro que deixou até o professor em choque._
