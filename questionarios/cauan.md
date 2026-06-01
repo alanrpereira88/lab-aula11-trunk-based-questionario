@@ -63,7 +63,7 @@ Você acabou de usar `--no-ff` no Round 1. O que ele garantiu no histórico? Por
 
 **Resposta:**
 
-_Escreva aqui._
+_O `--no-ff` (no fast-forward) forçou a criação de um commit de merge mesmo quando não seria necessário. Isso garantiu que no histórico fique registrado que aquele conjunto de commits veio de uma branch separada, preservando o contexto do trabalho.O Git Flow adota isso porque facilita rastrear quando e de onde cada feature ou entrega foi integrada. No `git log --graph`, com `--no-ff` aparece um nó de merge com duas linhas convergindo; sem ele, os commits aparecem em linha reta como se tivessem sido feitos direto na `main`._
 
 ---
 
@@ -73,7 +73,7 @@ Descreva em 2 a 3 frases a principal diferença entre Git Flow e GitHub Flow no 
 
 **Resposta:**
 
-_Escreva aqui._
+_No Git Flow, o desenvolvedor trabalha com múltiplas branches de longa duração (develop, release, hotfix) e o fluxo é mais burocrático — cada tipo de entrega tem um caminho definido. No GitHub Flow, a rotina é mais simples: cria branch, abre PR, revisão, merge na `main`. Na prática, o Git Flow pesa mais no dia a dia com mais comandos e decisões de branching, enquanto o GitHub Flow é mais ágil e direto._
 
 ---
 
