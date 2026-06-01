@@ -23,44 +23,18 @@ Leia o arquivo docs/feature-flags.md neste repositório antes de responder. O qu
 Resposta:
 Feature flags são essencialmente variáveis ou condicionais no código que permitem ativar ou desativar uma funcionalidade em tempo de execução sem precisar fazer um novo deploy. No Trunk-Based, elas resolvem o problema de termos que subir códigos de features longas que ainda não estão prontas, mantendo o trecho de código "escondido" do usuário final. Sem o uso de feature flags seria quase impossível commitar código incompleto na main, já que qualquer código integrado iria direto para o ar, quebrando a aplicação ou exibindo telas inacabadas para os usuários.
 
-## ROUND 2 — entregar via `short/q5q8-[nome]` sem `--no-ff`
+Q5 — O que o --no-ff garante no histórico
 
----
+A flag --no-ff força o Git a criar um commit de merge dedicado, mesmo que as branches estivessem alinhadas de forma linear. O Git Flow adota essa prática porque ela mantém o histórico do projeto bem documentado, deixando explícito exatamente onde começou e terminou o desenvolvimento de uma feature específica. Visualmente, quando rodamos o git log --graph, o merge padrão (fast-forward) esmaga tudo em uma linha reta só, enquanto o --no-ff desenha aquela famosa "curva" ou ramificação que se abre e depois fecha de volta na branch principal.
 
-### Q5 — O que o `--no-ff` garante no histórico
+Q6 — Comparativo: Git Flow vs GitHub Flow
 
-Você acabou de usar `--no-ff` no Round 1. O que ele garantiu no histórico? Por que o Git Flow adota essa convenção em vez do merge padrão? Qual a diferença visual no `git log --graph`?
+No dia a dia com o Git Flow, o ritmo de trabalho é mais cadenciado e burocrático, já que passamos por várias branches (feature, develop, release) e o código demora a ver a cor da produção. No GitHub Flow o processo é muito mais ágil e dinâmico: o desenvolvedor cria uma branch curta a partir da main, abre o PR, recebe o feedback e, assim que o merge é aprovado, a alteração já vai direto para o ar em produção.
 
-**Resposta:**
+Q7 — Escolha justificada
+Resposta:
+Eu escolheria o Git Flow para esse cenário de desenvolvimento mobile. Como o ciclo de lançamento é bem espaçado (a cada 3 meses) e exige um período longo de testes e homologação para evitar bugs críticos nas lojas de apps, a estrutura de branches de release e develop do Git Flow se encaixa perfeitamente para estabilizar a build. Além disso, como o time é bem enxuto, com apenas 4 pessoas, a complexidade de gerenciar essas branches extras do fluxo não gera gargalos e garante uma organização robusta para as entregas trimestrais.
 
-_Escreva aqui._
-
----
-
-### Q6 — Comparativo: Git Flow vs GitHub Flow
-
-Descreva em 2 a 3 frases a principal diferença entre Git Flow e GitHub Flow no dia a dia do desenvolvedor. Foque no que muda na prática, não só na quantidade de branches.
-
-**Resposta:**
-
-_Escreva aqui._
-
----
-
-### Q7 — Escolha justificada
-
-Uma equipe de 4 pessoas desenvolve um app mobile com lançamentos a cada 3 meses e ciclo longo de testes. Qual dos três workflows você escolheria? Justifique considerando o ritmo de lançamentos e o tamanho do time.
-
-**Resposta:**
-
-_Escreva aqui._
-
----
-
-### Q8 — Reflexão sobre a prática
-
-Dentre os três workflows que você praticou na aula 11.1, qual foi o mais desafiador? Descreva o que tornou ele mais difícil — pode ser um comando, uma regra do workflow, ou a lógica por trás de uma etapa.
-
-**Resposta:**
-
-_Escreva aqui._
+Q8 — Reflexão sobre a prática
+Resposta:
+Para mim, o Trunk-Based Development foi o fluxo mais desafiador de praticar por exigir uma mudança radical na forma de pensar o desenvolvimento. O mais difícil é pegar um problema complexo e ter a disciplina de quebrar o código em commits minúsculos que duram poucas horas, perdendo aquela zona de conforto de passar dias isolado em uma branch de feature própria. Além disso, a lógica de ter que usar feature flags para subir códigos intencionalmente incompletos na main exige uma atenção técnica muito maior para não quebrar a aplicação em produção.

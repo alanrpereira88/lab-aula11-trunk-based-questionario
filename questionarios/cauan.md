@@ -63,7 +63,7 @@ Você acabou de usar `--no-ff` no Round 1. O que ele garantiu no histórico? Por
 
 **Resposta:**
 
-_Escreva aqui._
+_O `--no-ff` (no fast-forward) forçou a criação de um commit de merge mesmo quando não seria necessário. Isso garantiu que no histórico fique registrado que aquele conjunto de commits veio de uma branch separada, preservando o contexto do trabalho.O Git Flow adota isso porque facilita rastrear quando e de onde cada feature ou entrega foi integrada. No `git log --graph`, com `--no-ff` aparece um nó de merge com duas linhas convergindo; sem ele, os commits aparecem em linha reta como se tivessem sido feitos direto na `main`._
 
 ---
 
@@ -73,7 +73,7 @@ Descreva em 2 a 3 frases a principal diferença entre Git Flow e GitHub Flow no 
 
 **Resposta:**
 
-_Escreva aqui._
+_No Git Flow, o desenvolvedor trabalha com múltiplas branches de longa duração (develop, release, hotfix) e o fluxo é mais burocrático — cada tipo de entrega tem um caminho definido. No GitHub Flow, a rotina é mais simples: cria branch, abre PR, revisão, merge na `main`. Na prática, o Git Flow pesa mais no dia a dia com mais comandos e decisões de branching, enquanto o GitHub Flow é mais ágil e direto._
 
 ---
 
@@ -83,7 +83,7 @@ Uma equipe de 4 pessoas desenvolve um app mobile com lançamentos a cada 3 meses
 
 **Resposta:**
 
-_Escreva aqui._
+_Escolheria o Git Flow. Com lançamentos a cada 3 meses e ciclo longo de testes, a equipe precisa de uma branch estável (`main`) isolada do trabalho em andamento, e de uma branch de integração (`develop`) onde features se acumulam e são testadas antes do release. O Git Flow foi desenhado exatamente para esse ritmo — releases previsíveis com janelas longas de QA. GitHub Flow e Trunk-Based fazem mais sentido para deploy contínuo, o que não é o caso aqui._
 
 ---
 
@@ -93,4 +93,4 @@ Dentre os três workflows que você praticou na aula 11.1, qual foi o mais desaf
 
 **Resposta:**
 
-_Escreva aqui._
+_O mais desafiador foi o Trunk-Based Development. A lógica de commitar código incompleto direto na `main` vai contra o instinto de manter a branch principal sempre "limpa". Entender que a segurança vem de fora do Git — via testes automatizados e feature flags — e não do isolamento em branches, exigiu uma mudança de perspectiva. O conceito de que a branch existe por horas, não dias, também foi difícil de assimilar no começo._
