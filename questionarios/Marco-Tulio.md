@@ -40,7 +40,7 @@ No Trunk-Based Development, os desenvolvedores criam branches que duram poucas h
 
 **Resposta:**
 
-_Escreva aqui._
+_Nesse cenário, existe achance de um código quebrado paralisar o time no meio do desenvolvimento, isso sem contar a inevitabilidade dos testes manuais.Tem que ter tester unitários mas automatizados para ter eficência, testes de integração que não dure muito tempo. juntando essas soluções e outras faz com que merges acontecerem se todos os testes passarem, garantindo a qualidade_
 
 ---
 
@@ -50,7 +50,7 @@ Leia o arquivo [`docs/feature-flags.md`](../docs/feature-flags.md) neste reposit
 
 **Resposta:**
 
-_Escreva aqui._
+_É uma tecnica que faz com que caso queira manter um recurso incompleto do código, aplicar o valor dela como "false" por exemplo que faz o código ignorar o recurso sem fazer o delpoy. Sem eles, exigiria muito do programador mascarar o recurso incompleto com branches longas_
 
 ---
 
