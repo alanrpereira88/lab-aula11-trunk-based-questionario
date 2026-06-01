@@ -31,20 +31,10 @@ Q6 — Comparativo: Git Flow vs GitHub Flow
 
 No dia a dia com o Git Flow, o ritmo de trabalho é mais cadenciado e burocrático, já que passamos por várias branches (feature, develop, release) e o código demora a ver a cor da produção. No GitHub Flow o processo é muito mais ágil e dinâmico: o desenvolvedor cria uma branch curta a partir da main, abre o PR, recebe o feedback e, assim que o merge é aprovado, a alteração já vai direto para o ar em produção.
 
-### Q7 — Escolha justificada
+Q7 — Escolha justificada
+Resposta:
+Eu escolheria o Git Flow para esse cenário de desenvolvimento mobile. Como o ciclo de lançamento é bem espaçado (a cada 3 meses) e exige um período longo de testes e homologação para evitar bugs críticos nas lojas de apps, a estrutura de branches de release e develop do Git Flow se encaixa perfeitamente para estabilizar a build. Além disso, como o time é bem enxuto, com apenas 4 pessoas, a complexidade de gerenciar essas branches extras do fluxo não gera gargalos e garante uma organização robusta para as entregas trimestrais.
 
-Uma equipe de 4 pessoas desenvolve um app mobile com lançamentos a cada 3 meses e ciclo longo de testes. Qual dos três workflows você escolheria? Justifique considerando o ritmo de lançamentos e o tamanho do time.
-
-**Resposta:**
-
-_Escreva aqui._
-
----
-
-### Q8 — Reflexão sobre a prática
-
-Dentre os três workflows que você praticou na aula 11.1, qual foi o mais desafiador? Descreva o que tornou ele mais difícil — pode ser um comando, uma regra do workflow, ou a lógica por trás de uma etapa.
-
-**Resposta:**
-
-_Escreva aqui._
+Q8 — Reflexão sobre a prática
+Resposta:
+Para mim, o Trunk-Based Development foi o fluxo mais desafiador de praticar por exigir uma mudança radical na forma de pensar o desenvolvimento. O mais difícil é pegar um problema complexo e ter a disciplina de quebrar o código em commits minúsculos que duram poucas horas, perdendo aquela zona de conforto de passar dias isolado em uma branch de feature própria. Além disso, a lógica de ter que usar feature flags para subir códigos intencionalmente incompletos na main exige uma atenção técnica muito maior para não quebrar a aplicação em produção.
