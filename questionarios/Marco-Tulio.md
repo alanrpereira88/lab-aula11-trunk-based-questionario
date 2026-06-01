@@ -64,7 +64,7 @@ Você acabou de usar `--no-ff` no Round 1. O que ele garantiu no histórico? Por
 
 **Resposta:**
 
-_Escreva aqui._
+_Forçou a criação de um commit de merge mesmo fast-foward seria possivel. Ele preserva o contexto histórico da Brach. No gráfico mosttra o commit de merge, a ramificação e todos os commits são agrupados visualmente_
 
 ---
 
@@ -74,7 +74,7 @@ Descreva em 2 a 3 frases a principal diferença entre Git Flow e GitHub Flow no 
 
 **Resposta:**
 
-_Escreva aqui._
+_No Git flow o Dev trabalha contra uma branch develop separada,criando branches a partir dela e integrando primeiramente, do merge para até a main. No Github Flow, o dev cria branches curtas diretamente a partir da main e, após um Pull Request com revisão e testes automatizados, faz merge na própria main e pode fazer deploy imediatamente, ou seja, não existe uma develop separada_
 
 ---
 
