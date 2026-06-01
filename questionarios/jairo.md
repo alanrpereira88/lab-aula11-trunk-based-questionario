@@ -23,29 +23,13 @@ Leia o arquivo docs/feature-flags.md neste repositório antes de responder. O qu
 Resposta:
 Feature flags são essencialmente variáveis ou condicionais no código que permitem ativar ou desativar uma funcionalidade em tempo de execução sem precisar fazer um novo deploy. No Trunk-Based, elas resolvem o problema de termos que subir códigos de features longas que ainda não estão prontas, mantendo o trecho de código "escondido" do usuário final. Sem o uso de feature flags seria quase impossível commitar código incompleto na main, já que qualquer código integrado iria direto para o ar, quebrando a aplicação ou exibindo telas inacabadas para os usuários.
 
-## ROUND 2 — entregar via `short/q5q8-[nome]` sem `--no-ff`
+Q5 — O que o --no-ff garante no histórico
 
----
+A flag --no-ff força o Git a criar um commit de merge dedicado, mesmo que as branches estivessem alinhadas de forma linear. O Git Flow adota essa prática porque ela mantém o histórico do projeto bem documentado, deixando explícito exatamente onde começou e terminou o desenvolvimento de uma feature específica. Visualmente, quando rodamos o git log --graph, o merge padrão (fast-forward) esmaga tudo em uma linha reta só, enquanto o --no-ff desenha aquela famosa "curva" ou ramificação que se abre e depois fecha de volta na branch principal.
 
-### Q5 — O que o `--no-ff` garante no histórico
+Q6 — Comparativo: Git Flow vs GitHub Flow
 
-Você acabou de usar `--no-ff` no Round 1. O que ele garantiu no histórico? Por que o Git Flow adota essa convenção em vez do merge padrão? Qual a diferença visual no `git log --graph`?
-
-**Resposta:**
-
-_Escreva aqui._
-
----
-
-### Q6 — Comparativo: Git Flow vs GitHub Flow
-
-Descreva em 2 a 3 frases a principal diferença entre Git Flow e GitHub Flow no dia a dia do desenvolvedor. Foque no que muda na prática, não só na quantidade de branches.
-
-**Resposta:**
-
-_Escreva aqui._
-
----
+No dia a dia com o Git Flow, o ritmo de trabalho é mais cadenciado e burocrático, já que passamos por várias branches (feature, develop, release) e o código demora a ver a cor da produção. No GitHub Flow o processo é muito mais ágil e dinâmico: o desenvolvedor cria uma branch curta a partir da main, abre o PR, recebe o feedback e, assim que o merge é aprovado, a alteração já vai direto para o ar em produção.
 
 ### Q7 — Escolha justificada
 
