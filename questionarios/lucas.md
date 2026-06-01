@@ -1,8 +1,8 @@
 # Questionário — Estratégias de Branching
 
-**Nome:** _lucas henrique conde rodrigues_
-**Data:** _29/05/2026_
-**Turma:** DevOps I — 2026
+**Nome:** _seu nome completo_
+**Data:** _data_
+**Turma:** DevOps I — 2025
 
 > Responda com suas próprias palavras, em frases completas. Mínimo de 3 frases por questão.
 > Respostas vagas ou idênticas às de colegas não serão aceitas.
@@ -19,7 +19,7 @@ No Git Flow, existe uma branch chamada `develop`, separada da `main`. Qual é o 
 
 **Resposta:**
 
-_develop é usada para testes e a main é o produto principal_
+_Escreva aqui._
 
 ---
 
@@ -29,7 +29,7 @@ No GitHub Flow, nenhuma mudança chega à `main` sem passar por um Pull Request.
 
 **Resposta:**
 
-_O Pull Request funciona como uma trava de segurança e qualidade: ele obriga que o código seja revisado por outros desenvolvedores e validado por testes automáticos antes de entrar na main. Esse modelo é adotado para evitar que erros humanos quebrem o produto final e para garantir que a equipe esteja sempre alinhada sobre o que está sendo alterado._
+_Escreva aqui._
 
 ---
 
@@ -39,7 +39,7 @@ No Trunk-Based Development, os desenvolvedores criam branches que duram poucas h
 
 **Resposta:**
 
-_Integrar direto na main sem suporte é arriscado porque qualquer erro quebra o sistema todo na hora. Para ser seguro, é essencial ter testes automáticos e um pipeline de CI/CD, que conferem e barram erros antes que eles cheguem ao produto final._
+_Escreva aqui._
 
 ---
 
@@ -49,7 +49,7 @@ Leia o arquivo [`docs/feature-flags.md`](../docs/feature-flags.md) neste reposit
 
 **Resposta:**
 
-_Feature Flags são "interruptores" que permitem ligar ou desligar funções no código sem novo deploy. Elas resolvem o risco de quebrar o sistema ao integrar funcionalidades inacabadas na main. Sem elas, commitar código incompleto seria impossível, pois ele ficaria exposto ao usuário final, causando erros ou exibindo recursos que ainda não funcionam._
+_Escreva aqui._
 
 ---
 
@@ -63,7 +63,7 @@ Você acabou de usar `--no-ff` no Round 1. O que ele garantiu no histórico? Por
 
 **Resposta:**
 
-_O --no-ff serve para deixar um "rastro" no histórico do Git. Em vez de o Git fingir que você fez tudo em uma linha reta só, ele força a criação de um nó de ligação que prova que aquela tarefa veio de uma branch separada._
+_Escreva aqui._
 
 ---
 
@@ -73,7 +73,7 @@ Descreva em 2 a 3 frases a principal diferença entre Git Flow e GitHub Flow no 
 
 **Resposta:**
 
-_O Cherry-pick é como "escolher a dedo". Ele serve para você copiar um commit específico de uma branch e colá-lo em outra, sem precisar trazer todo o resto do trabalho que foi feito naquela branch._
+_Escreva aqui._
 
 ---
 
@@ -83,7 +83,7 @@ Uma equipe de 4 pessoas desenvolve um app mobile com lançamentos a cada 3 meses
 
 **Resposta:**
 
-_Para a questão 6, a diferença é que o Git Flow foca em lançamentos grandes e planejados com várias etapas de organização, enquanto o GitHub Flow foca em entregas rápidas e constantes direto para o usuário. Já para a questão 7, o Git Flow é a melhor escolha porque sua estrutura lida bem com ciclos longos de testes e lançamentos a cada 3 meses, garantindo a estabilidade necessária para um app mobile antes de cada atualização oficial._
+_Escreva aqui._
 
 ---
 
@@ -93,4 +93,4 @@ Dentre os três workflows que você praticou na aula 11.1, qual foi o mais desaf
 
 **Resposta:**
 
-_O Trunk-Based Development foi o mais difícil devido à pressão de integrar o código diretamente na main várias vezes ao dia. O maior desafio foi a mudança de mentalidade: sem uma branch de segurança para testes longos, você é obrigado a garantir que cada pequeno commit esteja perfeito para não quebrar o projeto dos colegas, o que exige um domínio muito maior de automação e rapidez._
+_Escreva aqui._
